@@ -37,7 +37,7 @@ class RegisterHeader extends Component{
         return(
             <div>
                 <Container style={style.h3}>
-                    {number !== '4' && <Link to={prior}><Button onClick={onClickHome }
+                    {number !== '4' && <Link to={prior}><Button onClick={onClickHome}
                     content='Back' icon='arrow alternate circle left outline' labelPosition='left' /></Link>}
                 </Container>
                 <Container style={style.base}>

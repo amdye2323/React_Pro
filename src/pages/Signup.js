@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import {PersonalInput} from 'components/Register';
-import {DevelopInput} from 'components/Register';
-import {ExperienceInput} from 'components/Register';
-import {CompleteRegister} from 'components/Register';
-import {RegisterHeader} from 'components/Register';
+
+import Nav from 'components/MainPage/Nav';
+import Foot from 'components/MainPage/Foot';
+import SignUp from 'components/Signup/SignUp';
 
 import{
     Container
@@ -15,13 +14,11 @@ class Signup extends Component{
         const number = match.params.number;
         return(
             <div>
-                <RegisterHeader number={number}/>
-                <Container style={{marginBottom: '2rem'}}>
-                { (number === '1' || number === undefined && <PersonalInput />)}
-                { (number === '2' && <DevelopInput />)}
-                { (number === '3' && <ExperienceInput />)}
-                { (number === '4' && <CompleteRegister />)}
-                </Container>
+                <Nav />
+                <Container style={{marginTop:'3em'}}>
+                 <SignUp number={number} />
+                </Container>             
+                <Foot />
             </div>
         );
     }

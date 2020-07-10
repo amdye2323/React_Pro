@@ -45,7 +45,7 @@ class login extends Component{
                         </Form>
                         <Message>
                             Join or Create Your CompanyCode <br />
-                            <Link to="/signup" >Sign Up</Link>
+                            <Link to="/signup/1" >Sign Up</Link>
                         </Message>
                     </Grid.Column>
                 </Grid>
