@@ -1,9 +1,25 @@
 import React, { Component } from 'react';
 
+import{
+    Container,
+    Menu,
+    Item,
+    Form,
+    Input
+} from 'semantic-ui-react';
+
 class ExperienceInput extends Component{
     render(){
         return(
-            <div>프로젝트 입력 양식</div>
+            <div>
+                <Container>
+                    <Form>
+                        <h4 className="ui dividing header">Please Your Detail Address</h4>
+
+                        
+                    </Form>
+                </Container>
+            </div>   
         );
     };
 }
